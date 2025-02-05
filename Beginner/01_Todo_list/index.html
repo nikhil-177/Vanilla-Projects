@@ -1,14 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO List</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <h1>To-Do list</h1>
+    <div class="container">
+      <div class="add-list">
+        <input id="text" type="text" />
+        <button id="btn">ADD</button>
+      </div>
+      <div class="list">
+        <ul id="itemList">
+          <!-- Items will be dynamically added here -->
+        </ul>
+      </div>
+    </div>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
