@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Program</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <h1>Counter Program</h1>
+    <div class="pop-up">
+        <p>Please select initial number to be incremented or Decremented:</p>
+        <input id="value-initiated" value="1" type="number" />
+        <div class="pop-up-btn">
+          <button id="btn-1">Done</button>
+          <button id="btn-2">Cancel</button>
+        </div>
+      </div>
+
+    <div class="container">
+      <h1 id="displayer">0</h1>
+      <div class="btn">
+        <button onclick="incrementing()">Increment</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="decrementing()">Decrement</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
