@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
   </head>
@@ -10,25 +11,28 @@
     <div class="weatherapp">
       <div class="searcher">
         <input type="text" id="search" placeholder="Enter City..." />
-        <button>Enter</button>
+        <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="error">
+        <p>Invalid City Name</p>
       </div>
       <div class="weather-city">
-        <img src="src/cloudy.png" alt="" />
-        <h1>22c</h1>
-        <h2>City Name</h2>
+        <img id="img" src="src/cloudy.png" alt="" />
+        <h1 id="temp">22c</h1>
+        <h2 id="name">City Name</h2>
       </div>
       <div class="extra-info">
         <div class="humidity">
           <img src="src/humidity.png" alt="" />
           <div class="content1">
-            <h4>35%</h4>
+            <h4 id="humidities">35%</h4>
             <span>Humidity</span>
           </div>
         </div>
         <div class="wind-speed">
           <img src="src/windicon.png" alt="" />
           <div class="content2">
-            <h4>35%</h4>
+            <h4 id="wind">35%</h4>
             <span>Wind Speed</span>
           </div>
         </div>
