@@ -10,7 +10,9 @@ async function checkWeather(city) {
     const response = await fetch(api + city + `&appid=${apiKey}`);
     let data = await response.json()
 
-    if(response.status == 404){
+    document.querySelector(".error").style.display = 'none'; 
+    if(response.status == 404) {
+
         document.querySelector(".error").style.display = 'block'
     document.querySelector('.weather-city').style.display = 'none'
     document.querySelector('.extra-info').style.display = 'none'
@@ -39,6 +41,7 @@ async function checkWeather(city) {
 
     document.querySelector('.weather-city').style.display = 'block'
     document.querySelector('.extra-info').style.display = 'flex'
+     document.querySelector(".error").style.display = 'none'
  }
 }
 
