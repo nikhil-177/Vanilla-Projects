@@ -42,7 +42,8 @@ body{
 }
 
 
-.container .list ul li{
+.container .list ul li {
+    overflow-x: scroll;
     list-style-type: none;
     padding: 0.2rem;
     font-size: 1.2rem;
@@ -50,6 +51,8 @@ body{
     border-bottom: 0.1rem solid black;
     display: flex;
     justify-content: space-between;
+    height: auto;
+    max-width:100%;
 }
 
 .container .list ul li button{
@@ -58,5 +61,16 @@ body{
     background-color: transparent;
     color: red;
     border: none;
+}
+
+@media (max-width : 700px) {
+ 
+    .container{
+        width: 95vw;
+    }
+
+    .container input{
+        width: 80%;
+    }
 }
 
