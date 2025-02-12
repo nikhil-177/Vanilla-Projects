@@ -13,6 +13,7 @@ HTML , body{
     background-color: lightblue;
 }
 
+    
 .container{
     margin: auto;
     width: 50vw;
@@ -24,8 +25,7 @@ HTML , body{
     margin-top: 5px;
     border-radius: 10px;
 }
-    
-    
+
 .container > h1{
     border-bottom: 2px solid #36454F;
 }
@@ -94,31 +94,21 @@ HTML , body{
     border-radius: 10px;
 }
 
-@media (max-width : 1024px) {
-    .container{
-        width: 40vw;
-    }
-    .container >h1{
-        font-size: 1.5rem;
-    }
-    .container .output h4{
-        font-size: 1.4em;
-    }
-}
 
-@media (max-width : 740px) {
+@media (max-width:600px) {
+  
     .container{
-        width: 60vw;
+        width: 90vw;
+        height: 50vh;
     }
-    
-}
-
-@media (max-width:560px) {
     .container > h1{
-        font-size: 4vw;
+        font-size: 1.4rem;
+    }
+    .container .guessing button{
+        border-radius: 10px;
+        padding: 3px 3px;
     }
     .container .output h4{
-        font-size: 3.5vw;
+        font-size: 2em;
     }
 }
-

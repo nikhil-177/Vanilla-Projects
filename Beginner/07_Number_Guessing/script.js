@@ -7,25 +7,26 @@ const output = document.querySelector('.output')
 const h4 = document.querySelector('.output h4')
 
 
-let guess = Math.floor((Math.random() * (50 - 10 + 1) + 10));
-console.log(guess);
+let guess = Math.floor((Math.random() * (10- 2 + 1) + 2));
 
 btn.addEventListener('click', () => {
     pg.innerHTML = `player : ${input.value}`;
+   
     if(input.value == guess){
         cg.innerHTML = `computer : ${guess}`;
         h4.style.display = 'none';
         createH1()
     }
-    else{
-        if(input.value > guess){
-           h4.innerHTML = 'Guess lower';
-        }
-        else if(input.value < guess){
-           h4.innerHTML = 'Guess Higher'
-        }
+    
+    else if(input.value > guess){
+       h4.innerHTML = 'Guess lower';
+    }
+
+    else if(input.value < guess){
+       h4.innerHTML = 'Guess Higher'
     }
 })
+
 
 function createH1(){
     const h1 = document.createElement('h1');
