@@ -32,8 +32,8 @@ function playerChoice(playerchoice){
     }
 
     resultDisplay.textContent = result;
-    playerDisplay.textContent = `Player :${playerchoice}`;
-    computerDisplay.textContent = `Computer :${computerChoice}`;
+    playerDisplay.textContent = `Player : ${playerchoice}`;
+    computerDisplay.textContent = `Computer : ${computerChoice}`;
     resultDisplay.classList.remove("greentext","redtext")
 
     switch(result){
@@ -48,7 +48,7 @@ function playerChoice(playerchoice){
             computerScore.textContent = `Computer: ${cs}`;
             break;
         case "IT'S A TIE!" :
-            resultDisplay.style.color = 'black';
+            resultDisplay.style.color = 'white';
             break;
     }
 

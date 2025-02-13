@@ -1,0 +1,67 @@
+
+
+@media (max-width: 360px) {
+    body > h1{
+        font-size: 7.8vw;
+    }
+    .btn{
+        margin: 5vw;
+    }
+    .btn button{
+        font-size: 18vw;
+        margin-right: 3vw;
+    }
+    #player-display , #computer-display{
+        font-size: 6vw;
+    }
+    #score{
+        border: 1vw solid whitesmoke;
+        margin-top: 5px;
+        padding: 2vw 6vw 2vw 2vw;
+    }
+    #score h4{
+        font-size: 5vw;
+    }
+    #score #player-score , #score #computer-score{
+        font-size: 4.4vw;
+    }
+    #result-display{
+        font-size: 18vw;
+    }
+}
+
+@media (min-width: 769px) {
+    body > h1{
+        font-size: 2.5rem;
+    }
+    .btn button{
+        font-size: 4rem;
+    }
+    #player-display , #computer-display{
+        font-size: 1.4rem;
+    }
+    #score #player-score , #score #computer-score{
+        font-size: 1.2em;
+    }
+    #result-display{
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    body > h1{
+        font-size: 3rem;
+    }
+    .btn button{
+        font-size: 5rem;
+    }
+    #player-display , #computer-display{
+        font-size: 1.6rem;
+    }
+    #score #player-score , #score #computer-score{
+        font-size: 1.4em;
+    }
+    #result-display{
+        font-size: 6rem;
+    }
+}
