@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',arial;
+    color: #E0E0E0;
+}
+
+body{
+    background: linear-gradient(to bottom ,rgb(64, 64, 255), #3f87a6);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    width: 40%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: -50px 45px 30px rgba(0,0,0,0.3);
+    overflow:auto;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.container .nav{
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    padding: 10px;
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    backdrop-filter: blur(1000px);
+}
+
+.container .nav h1{
+    font-size: 3vw;
+}
+
+.container .nav button{
+    background-color: #2979FF;
+    padding: 0px 6px;
+    font-size:2vw;
+    border: 2px solid black;
+    border-radius: 14px;
+}
+
+.container .nav button:hover{
+    background-color: rgba(135, 206, 250,0.6);
+}
+
+.container .quote{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 1.3rem;
+} 
+
+.container .quote span{
+    text-align: right;
+}
