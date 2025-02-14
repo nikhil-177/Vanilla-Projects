@@ -19,7 +19,8 @@ body.dark-mode {
 .dark-mode h1,
 .dark-mode label,
 .dark-mode h4,
-.dark-mode span{
+.dark-mode span,
+.dark-mode option{
     color: #fff;
 }
 
