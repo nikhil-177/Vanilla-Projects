@@ -17,9 +17,15 @@ body.dark-mode {
 .dark-mode select,
 .dark-mode button ,
 .dark-mode h1,
-.dark-mode label{
-    background-color: #333;
+.dark-mode label,
+.dark-mode h4,
+.dark-mode span{
     color: #fff;
+}
+
+.dark-mode input,
+.dark-mode select{
+    background-color: #333;
     border-color: #555;
 }
 

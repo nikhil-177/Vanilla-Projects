@@ -68,6 +68,11 @@ body{
     background: linear-gradient(135deg, #0056b3, #003d80);
 }
 
+.container .converter #after-conversion{
+    color: white;
+    /* background-color: yellow; */
+}
+
 
 /* dark mode toggle bar */
 .container .converter .switch{
