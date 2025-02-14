@@ -71,6 +71,7 @@ body{
 
 /* dark mode toggle bar */
 .container .converter .switch{
+    position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
