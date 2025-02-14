@@ -1,0 +1,28 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode .converter {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode button ,
+.dark-mode h1,
+.dark-mode label{
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.dark-mode button:hover {
+    background-color: #444;
+}

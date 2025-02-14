@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',arial;
+    color: #333333;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.container{
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container .converter{
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: fit-content;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container .converter #toggle-mode{
+    width: 20%;
+} 
+
+.container .converter h1{
+    font-style: 22px;
+    margin-bottom: 10px;
+}
+
+.container .converter input , select{
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+}
+
+.container .converter button{
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-style: 16px;
+    transition: 0.3s;
+}
+
+.container .converter button:hover{
+    background: linear-gradient(135deg, #0056b3, #003d80);
+}
+
+
+/* dark mode toggle bar */
+.container .converter .switch{
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.container .converter .switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.container .converter .switch .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.container .converter .switch .slider::before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.container .converter .switch input:checked + .slider{
+    background-color: black;
+}
+
+.container .converter .switch input:checked + .slider:before{
+    transform: translateX(26px);
+}
+
+
+@media (max-width : 480px){
+    .container .converter{
+        width: 90%;
+    }
+}
+
+@media (max-width:200px) {
+    .container .converter *{
+        font-size: 10vw;
+    }
+    .container .converter button{
+        max-width: 100%;
+    }
+}
