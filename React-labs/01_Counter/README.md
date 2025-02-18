@@ -1,0 +1,2 @@
+# Counter Program :
+   So this is it, for this program because I made it just for a starting practice to know how actually react js works. So I thought just to make a pretty small project which boost up my confidence regarding react js. I'll continue making morre awesome projects later on I think using react and Tailwind both this is it.     THANKYOU!
