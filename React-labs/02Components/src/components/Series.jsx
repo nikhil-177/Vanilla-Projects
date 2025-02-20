@@ -1,21 +1,24 @@
 import seriesData from '../api/SeriesData.json'
+import '../App.css'
 
 function NetflixSeries(){
     return (
         
        <ul>
         {
-            seriesData.map((element) => {
+            seriesData.map(({id , img_url , rating , description , genre , name , cast , watch_url}) => {
                 return (
-                    <li key={element.id}>
-                        <img src={element.img_url} alt="" width={'30%'} height={'30%'}/>
-                        <div>Name: {element.name}</div>
-                        <div>Rating: {element.rating}</div>
-                        <p>Description: {element.description}</p>
-                        <div>Genre: {element.genre}</div>
-                        <div>Cast: {element.cast} </div>
-                        <a href={element.watch_url} target='_blank'>
-                            <button>Watch Now</button>
+                    <li key={id}>
+                        <img src={img_url} alt="" width={'30%'} height={'30%'}/>
+                        <div id='name'>Name: {name}</div>
+                        <div className=
+                        {(rating >= 8.5) ? 'rating-above' : 'rating-below'}>
+                            Rating: {rating}</div>
+                        <p>Description: {description}</p>
+                        <div id='genre'>Genre: {genre.join(",")}</div>
+                        <div id='cast'>Cast: {cast.join(",")} </div>
+                        <a href={watch_url} target='_blank'>
+                            <button className={(rating >= 8.5 ) ? 'btn btn-above' : 'btn btn-below'}>Watch Now</button>
                         </a>
                     </li>
                 )    
