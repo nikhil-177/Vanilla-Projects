@@ -1,0 +1,40 @@
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .outerlayer{
+    background-color: gray;
+    width: 200px;
+    height: 80px;
+    border-radius: 1000px;
+}
+
+#container .outerlayer .innerlayer{
+    background-color: black;
+    width: 90px;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    /* transform: translateX(110px); */
+}
+
+#container .outerlayer .innerlayer span{
+    font-size: 2em;
+}
+
+.Toggle{
+    transform: translateX(110px);
+}
+
+.off{
+    transform: translateX(0);
+}
+
