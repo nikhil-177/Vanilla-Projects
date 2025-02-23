@@ -1,0 +1,79 @@
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container .container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    box-shadow: 0px 0px 10px gray;
+    padding: 0.7em;
+    min-width: 350px;
+    margin-top: 30px;
+}
+
+.main-container .container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .container h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.main-container .container p{
+    font-size: 0.8em;
+    margin-bottom: 9px;
+}
+
+.main-container .container form label {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.main-container .container form input,
+.main-container .container form textarea{
+    background-color: #ECECEC;
+    border-inline-style: none ;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: medium;
+    margin-bottom: 12px;
+}
+
+.main-container .container form button {
+    background-color: #1e90ff;
+    color: ghostwhite;
+    /* box-shadow: none; */
+    /* outline: none; */
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.main-container .container form div {
+    position: relative;
+}
+
+.main-container .container form div #password {
+    width: 100%;
+    padding-right: 40px; 
+}
+
+.main-container .container form div button {
+    position: absolute;
+    right: 10px;  
+    top: 50%;
+    transform: translateY(-60%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
