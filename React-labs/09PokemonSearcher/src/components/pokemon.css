@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Container for the entire list */
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  /* Style for individual Pokémon list items */
+  li {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Pokémon image styling */
+  img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Type section */
+  div {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #777;
+  }
+  
+  div.types {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3a3a3a;
+  }
+  
+  /* Stats and Abilities Section */
+  .data {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  h5 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .physical-stats,
+  .ability,
+  .base-stats {
+    margin-bottom: 15px;
+  }
+  
+  span {
+    display: block;
+    font-size: 1em;
+    color: #444;
+    margin: 5px 0;
+  }
+  
+  /* Styling for abilities */
+  .ability span {
+    font-style: italic;
+    color: #888;
+  }
+  
+  /* Base stats styling */
+  .base-stats span {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  /* Color coding for different stats (optional) */
+  .base-stats span {
+    font-weight: bold;
+  }
+  
+  .base-stats span:nth-child(1) {
+    color: #ff4d4d;  /* HP - Red */
+  }
+  
+  .base-stats span:nth-child(2) {
+    color: #ff8c00;  /* Attack - Orange */
+  }
+  
+  .base-stats span:nth-child(3) {
+    color: #4dff88;  /* Defense - Green */
+  }
+  
+  .base-stats span:nth-child(4) {
+    color: #1e90ff;  /* Sp. Attack - Blue */
+  }
+  
+  .base-stats span:nth-child(5) {
+    color: #9932cc;  /* Sp. Defense - Purple */
+  }
+  
+  .base-stats span:nth-child(6) {
+    color: #ffd700;  /* Speed - Yellow */
+  }
+  
