@@ -3,7 +3,7 @@ import { PokemonCard } from "./PokemonCard";
 import "./pokemon.css";
 
 export const Pokemon = () => {
-  const apiURL = "https://pokeapi.co/api/v2/pokemon?limit=100";
+  const apiURL = "https://pokeapi.co/api/v2/pokemon?limit=1000";
   const [detailedData, setDetailedData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
