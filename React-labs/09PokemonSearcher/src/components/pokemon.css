@@ -1,136 +1,184 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+section h1{
+  font-size: 2.1em;
+}
+
+section input{
+  width: 200px;
+  font-size: 1.1em;
+  padding: 2.5px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+section p{
+  align-self: flex-start;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+section ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
   
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    padding: 20px;
+}
+
+section ul li{
+  list-style-type: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: all 0.2s ease-in;
+}
+
+section ul li:hover{
+  transform: scale(1.03);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+section ul li h1{
+  font-size: 1.6em;
+  padding-left: 5px;
+}
+
+section ul li .mover{
+  width: 80%;
+  padding: 4px;
+  margin: 3px 25px;
+  display: flex;
+}
+
+section ul li .mover img{
+  width: 100%;
+} 
+
+section ul li .type{
+  background-color: lightgreen;
+  width: fit-content;
+  margin: auto;
+  padding: 4px 16px;
+  border-radius: 1000px;
+}
+
+section ul li .data .physical-stats h5{
+  padding-left: 3px;
+}
+
+section ul li .data .physical-stats span{
+  padding-left: 13px;
+  font-size: 1em;
+}
+
+section ul li .data .ability h5{
+  padding-left: 3px;
+}
+
+section ul li .data .ability span{
+  padding-left: 13px;
+  font-size: 1em;
+}
+
+section ul li .data .base-stats h5{
+  padding-left: 3px;
+}
+
+section ul li .data .base-stats .stats{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding-left: 13px;
+}
+
+@media (max-width: 1300px) {
+  section ul {
+    grid-template-columns: repeat(3,1fr);
   }
-  
-  /* Container for the entire list */
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 0;
+}
+
+@media (max-width: 900px) {
+  section ul {
+    grid-template-columns: repeat(2,1fr);
   }
-  
-  /* Style for individual Pokémon list items */
-  li {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 280px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  section>h1{
+    font-size: 7vw;
   }
-  
-  li:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  section > input{
+    width: 70%;
+    font-size: 4vw;
   }
-  
-  /* Heading styles */
-  h1 {
-    font-size: 1.6em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
+  section > p{
+    font-size: 3vw;
   }
-  
-  /* Pokémon image styling */
-  img {
-    border-radius: 10px;
-    margin-bottom: 15px;
-    max-width: 100%;
-    height: auto;
+  section ul {
+    grid-template-columns: repeat(2,1fr);
   }
-  
-  /* Type section */
-  div {
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #777;
+ 
+  section ul li h1{
+    font-size: 5vw;
   }
-  
-  div.types {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #3a3a3a;
+  section ul li .type{
+    font-size: 2.7vw;
   }
-  
-  /* Stats and Abilities Section */
-  .data {
-    text-align: left;
-    margin-top: 20px;
+  section ul li .data .physical-stats h5,
+  section ul li .data .ability h5,
+  section ul li .data .base-stats h5{
+    font-size: 2.3vw;
   }
-  
-  h5 {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 10px;
+  section ul li .data .physical-stats span,
+  section ul li .data .ability span,
+  section ul li .data .base-stats span{
+    font-size: 2.5vw;
   }
-  
-  .physical-stats,
-  .ability,
-  .base-stats {
-    margin-bottom: 15px;
+}
+
+@media (max-width:320px) {
+  section > h1{
+    font-size: 7.5vw;
   }
-  
-  span {
-    display: block;
-    font-size: 1em;
-    color: #444;
-    margin: 5px 0;
+  section > input{
+    font-size: 5vw;
+    width: 70%;
   }
-  
-  /* Styling for abilities */
-  .ability span {
-    font-style: italic;
-    color: #888;
+  section > p{
+    font-size: 4vw;
   }
-  
-  /* Base stats styling */
-  .base-stats span {
-    display: inline-block;
-    margin-right: 15px;
+  section ul{
+    grid-template-columns: repeat(1,1fr);
   }
-  
-  /* Color coding for different stats (optional) */
-  .base-stats span {
-    font-weight: bold;
+  section ul li h1{
+    font-size: 9vw;
   }
-  
-  .base-stats span:nth-child(1) {
-    color: #ff4d4d;  /* HP - Red */
+  section ul li .type{
+    font-size: 3.5vw;
   }
-  
-  .base-stats span:nth-child(2) {
-    color: #ff8c00;  /* Attack - Orange */
+  section ul li .data .physical-stats h5,
+  section ul li .data .ability h5,
+  section ul li .data .base-stats h5{
+    font-size: 3vw;
   }
-  
-  .base-stats span:nth-child(3) {
-    color: #4dff88;  /* Defense - Green */
+  section ul li .data .physical-stats span,
+  section ul li .data .ability span,
+  section ul li .data .base-stats span{
+    font-size: 3.4vw;
   }
-  
-  .base-stats span:nth-child(4) {
-    color: #1e90ff;  /* Sp. Attack - Blue */
+}
+
+@media (max-width:150px) {
+  section ul li .mover{
+    margin: 0vw 5vw;
   }
-  
-  .base-stats span:nth-child(5) {
-    color: #9932cc;  /* Sp. Defense - Purple */
+  section ul li .mover img {
+    width: 80%;
+    margin: 0px;
   }
-  
-  .base-stats span:nth-child(6) {
-    color: #ffd700;  /* Speed - Yellow */
-  }
-  
+}
